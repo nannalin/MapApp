@@ -25,6 +25,10 @@ The intention of this project is simply to give you a chance to solve a realisti
   
   $ brew install node
   
+2. install a HTTP server: 
+
+  $ npm install http-server -g
+  
 ## To run the project
 
 1. open the command line 
