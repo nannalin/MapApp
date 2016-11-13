@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="mapApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Map App</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js"></script>  
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</head>
+<body>
+<div ng-controller="MapCtrl">
+	<div id="map_sec">
+	    <div id="map"></div>
+    </div>
+    <div id="local_storage_sec">
+    	<table>
+    		<thead>
+    			<th>Mi</th>
+    			<th>Latitude</th>
+    			<th>Longitude</th>
+    		</thead>
+    		<tbody>
+    			{{data}}
+    		</tbody>
+    	</table>
+    	
+    	<form>
+    		Latitude:  
+	    	<input type="text" name="latitude">
+	    	Longitude:
+	    	<input type="text" name="longitude">
+	    	<button ng-click="search()">Search</button>
+	    	<button ng-click="add()">Add</button>
+    	</form>
+
+    	<button ng-click="load()">Load PCT</button>
+    </div>
+</div>
+</body>
+</html>

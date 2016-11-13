@@ -1,0 +1,34 @@
+// variables
+$whiteSmoke: #F5F5F5;
+
+// _reset.scss
+html,
+body,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+// styling
+body {
+    font: 100% Helvetica, sans-serif;
+    background-color: $whiteSmoke;
+}
+a {
+    text-decoration: none;
+}
+#map_sec {
+    float:left;
+    width:50%;
+}
+#map{
+    height:700px; 
+    box-shadow: 3px 3px 10px gray;
+}
+#local_storage_sec {
+    width: 48%;
+    float:left;
+    padding-left: 20px;
+    box-shadow: 3px 3px 10px gray;
+}
